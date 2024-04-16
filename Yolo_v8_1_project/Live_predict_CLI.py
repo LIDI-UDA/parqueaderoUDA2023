@@ -4,7 +4,12 @@ import numpy as np
 from ultralytics import YOLO
 from my_functions import functions as fn
 
-model = YOLO('yolov8n.pt')  # yolov8n-obb.pt yolov8n.pt
+"""
+For pytorch model -> yolov8n.pt
+For openvino model -> yolov8n_openvino_model
+For onnx model -> yolov8n.onnx
+"""
+model = YOLO('yolov8n_openvino_model')  # yolov8n-obb.pt yolov8n.pt
 
 df_clusters_areas = pd.read_parquet("parquet_data/clusters_areas_park2.parquet")
 TOTAL_SPACES = set(df_clusters_areas['Cluster'].tolist())
