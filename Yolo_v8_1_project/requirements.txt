@@ -1,0 +1,13 @@
+ultralytics==8.1.46
+fastparquet==2024.2.0
+imutils==0.5.4
+numpy==1.26.0
+opencv-contrib-python==4.9.0.80
+openpyxl==3.1.2
+pandas
+pillow==10.3.0
+scikit-learn==1.4.2
+torch==2.2.2
+torchaudio==2.2.2
+torchvision==0.17.2
+
